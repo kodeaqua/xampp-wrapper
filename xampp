@@ -9,10 +9,10 @@ elif [[ $1 == 're' ]]; then
 elif [[ $1 == 'off' ]]; then
 	sudo "$XAMPP" stop
 elif [[ $1 == 'help' ]]; then
-	printf "Usage:\n
-	xampp on\t: To turn on XAMPP modules\n
-	xampp re\t: To restart XAMPP modules\n
-	xampp off\t: To turn off XAMPP modules\n
+	printf "Usage:
+	xampp on\t: To turn on XAMPP modules
+	xampp re\t: To restart XAMPP modules
+	xampp off\t: To turn off XAMPP modules
 	xampp help\t: To show this help\n"
 else
 	echo "Too few argument!"
