@@ -1,6 +1,6 @@
 # xampp-wrapper
 [EN] A wrapper XAMPP for Linux \
-This script will help you to install and run XAMPP on Linux
+This script will help you to install and run XAMPP on Linux \
 [ID] Pembungkus XAMPP untuk Linux \
 Script ini akan membantumu untuk memasang dan menjalankan XAMPP pada Linux
 
