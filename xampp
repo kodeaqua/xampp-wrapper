@@ -1,0 +1,17 @@
+#!/bin/bash
+# Default XAMPP installation path
+export XAMPP="/opt/lampp/lampp"
+
+# Usage:
+# 	xampp on	- To turn on XAMPP modules
+#	xampp re 	- To restart XAMPP modules
+#	xampp off	- To turn off XAMPP modules
+if [[ $1 == 'on' ]]; then
+	sudo "$XAMPP" start
+elif [[ $1 == 're' ]]; then
+	sudo "$XAMPP" restart
+elif [[ $1 == 'off' ]]; then
+	sudo "$XAMPP" stop
+else
+	echo "Too few argument!"
+fi
