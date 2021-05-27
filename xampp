@@ -1,6 +1,6 @@
 #!/bin/bash
 # Default XAMPP installation path
-export XAMPP="/opt/lampp/lampp"
+XAMPP=/opt/lampp/lampp
 
 # Usage:
 # 	xampp on	- To turn on XAMPP modules
