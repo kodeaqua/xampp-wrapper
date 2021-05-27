@@ -17,5 +17,5 @@ $ sudo ./install.sh
 
 # How to use / Cara menggunakan:
 ```
-$ xampp <on|off|re|help> 
+$ xampp <start|restart|stop|panel|help> 
 ```

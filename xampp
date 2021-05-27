@@ -1,13 +1,11 @@
 #!/bin/bash
 # Default XAMPP installation path
-XAMPP=/opt/lampp/lampp
+XAMPP=/opt/lampp
 
-if [[ $1 == 'on' ]]; then
-	sudo "$XAMPP" start
-elif [[ $1 == 're' ]]; then
-	sudo "$XAMPP" restart
-elif [[ $1 == 'off' ]]; then
-	sudo "$XAMPP" stop
+if [[ $1 == 'start' || $1 == 'stop' || $1 == 'restart' ]]; then
+	sudo $XAMPP/lampp $1
+elif [[ $1 == 'panel' ]]; then
+	sudo $XAMPP/manager-linux-x64.run
 elif [[ $1 == 'help' ]]; then
 	printf "Usage:
 	xampp on\t: To turn on XAMPP modules
@@ -15,5 +13,5 @@ elif [[ $1 == 'help' ]]; then
 	xampp off\t: To turn off XAMPP modules
 	xampp help\t: To show this help\n"
 else
-	echo "Too few argument!"
+	printf "Too few or invalid argument!"
 fi
