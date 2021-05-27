@@ -2,16 +2,18 @@
 # Default XAMPP installation path
 XAMPP=/opt/lampp/lampp
 
-# Usage:
-# 	xampp on	- To turn on XAMPP modules
-#	xampp re 	- To restart XAMPP modules
-#	xampp off	- To turn off XAMPP modules
 if [[ $1 == 'on' ]]; then
 	sudo "$XAMPP" start
 elif [[ $1 == 're' ]]; then
 	sudo "$XAMPP" restart
 elif [[ $1 == 'off' ]]; then
 	sudo "$XAMPP" stop
+elif [[ $1 == 'help' ]]; then
+	printf "Usage:\n
+	xampp on\t: To turn on XAMPP modules\n
+	xampp re\t: To restart XAMPP modules\n
+	xampp off\t: To turn off XAMPP modules\n
+	xampp help\t: To show this help\n"
 else
 	echo "Too few argument!"
 fi
