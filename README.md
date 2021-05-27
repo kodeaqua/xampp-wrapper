@@ -1,5 +1,5 @@
 # xampp-wrapper
-[EN] A wrapper XAMPP for Linux
+[EN] A wrapper XAMPP for Linux \n
 [ID] Pembungkus XAMPP untuk Linux
 
 # Installation / Cara pemasangan:
