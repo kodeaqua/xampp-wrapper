@@ -8,9 +8,10 @@ elif [[ $1 == 'panel' ]]; then
 	sudo $XAMPP/manager-linux-x64.run
 elif [[ $1 == 'help' ]]; then
 	printf "Usage:
-	xampp on\t: To turn on XAMPP modules
-	xampp re\t: To restart XAMPP modules
-	xampp off\t: To turn off XAMPP modules
+	xampp start\t: To turn on XAMPP modules
+	xampp stop\t: To turn off XAMPP modules
+	xampp restart\t: To restart XAMPP modules
+	xampp panel\t: To open control panel
 	xampp help\t: To show this help\n"
 else
 	printf "Too few or invalid argument!"
