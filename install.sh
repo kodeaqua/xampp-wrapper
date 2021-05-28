@@ -11,6 +11,10 @@ if ! [[ -d "$XAMPP" ]]; then
 		sudo apt update && sudo apt install -y wget
 	fi
 
+	if ! [[ $(which netstat) ]]; then
+		sudo apt update && sudo apt install -y net-tools	
+	fi
+
 	if ! [[ -f 'xampp-linux-*-installer.run' ]]; then
 		wget --no-clobber "$URL"
 	fi
