@@ -30,6 +30,8 @@ if [[ $1 == 'install' ]]; then
 elif [[ $1 == 'uninstall' ]]; then
 
 	sudo $XAMPP/uninstall && sudo rm -rf "$XAMPP"
+	
+	sudo rm -f $DEST
 
 else
 
